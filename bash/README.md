@@ -8,9 +8,13 @@ This directory contains solutions for the [Advent of Code 2024](https://adventof
 bash/
 ├── solutions/       # Directory containing solution scripts
 │   ├── day01/      # Solutions for Day 1
+│   ├── day02/      # Solutions for Day 2
 │   └── ...         # Additional day solutions
 ├── input/          # Directory containing input files
 │   ├── day01/      # Input files for Day 1
+│   │   ├── input.txt
+│   │   └── example.txt
+│   ├── day02/      # Input files for Day 2
 │   │   ├── input.txt
 │   │   └── example.txt
 │   └── ...         # Additional day inputs
@@ -45,9 +49,26 @@ bash/
 
    # Run Day 1's distance calculation with actual input
    cat input/day01/input.txt | ./solutions/day01/calculate-distance.sh
+
+   # Run Day 2's safety reports with example input
+   cat input/day02/example-input.txt | ./solutions/day02/calculate-safe-reports.sh
+   cat input/day02/example-input.txt | ./solutions/day02/calculate-safe-reports-dampener.sh
    ```
 
 Each solution script is designed to read input from standard input (stdin), allowing for easy piping of input files.
+
+## Solutions
+
+### Day 1: Calibration Values
+- `calculate-distance.sh`: Calculate calibration values from input sequences
+- `calculate-similarity-score.sh`: Compute similarity scores for calibration data
+
+### Day 2: Safety Reports
+- `calculate-safe-reports.sh`: Analyze sequences for safety based on ascending/descending patterns and distance rules
+- `calculate-safe-reports-dampener.sh`: Enhanced version that implements the Problem Dampener feature
+  - Allows one violation to be removed if it makes an unsafe report safe
+  - Uses array manipulation to test each possible dampening position
+  - Maintains original safety rules for distance and sequence patterns
 
 ## Input Files
 
@@ -61,6 +82,8 @@ Each solution script is designed to read input from standard input (stdin), allo
 - Modular structure with separate directories for each day
 - Automatic input file handling via pipes
 - Support for both example and actual puzzle inputs
+- Debug output to help understand solution logic
+- Array manipulation for complex sequence processing
 
 ## Contributing
 
@@ -79,3 +102,6 @@ This project is licensed under the MIT License - see the [LICENSE](../LICENSE) f
 - Each solution script should read input from standard input or a file specified as an argument
 - Add comments to explain complex logic or algorithms
 - Consider performance for larger inputs
+- Scripts use bash arrays and arithmetic operations
+- Debug output can be enabled/disabled via commented set -x
+- Error handling for invalid inputs
