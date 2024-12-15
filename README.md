@@ -44,8 +44,8 @@ Each language implementation has its own README with specific instructions on ho
 |     | B    | ✅   | ✅   |
 | 2   | A    | -    | ✅   |
 |     | B    | -    | ✅   |
-| 3   | A    | -    | ✅   |
-|     | B    | -    | ✅   |
+| 3   | A    | ✅   | ✅   |
+|     | B    | ✅   | ✅   |
 | 7   | A    | ✅   | -    |
 |     | B    | ✅   | -    |
 

@@ -10,6 +10,7 @@ aoc2024/
 │   ├── main/
 │   │   ├── java/org/an1sht/
 │   │   │   ├── util/           # Utility classes
+│   │   │   ├── day03/          # Solutions for Day 3
 │   │   │   ├── day07/          # Solutions for Day 7
 │   │   │   └── ...            # Solutions for other days
 │   │   └── resources/
