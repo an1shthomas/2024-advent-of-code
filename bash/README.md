@@ -9,12 +9,16 @@ bash/
 ├── solutions/       # Directory containing solution scripts
 │   ├── day01/      # Solutions for Day 1
 │   ├── day02/      # Solutions for Day 2
+│   ├── day03/      # Solutions for Day 3
 │   └── ...         # Additional day solutions
 ├── input/          # Directory containing input files
 │   ├── day01/      # Input files for Day 1
 │   │   ├── input.txt
 │   │   └── example.txt
 │   ├── day02/      # Input files for Day 2
+│   │   ├── input.txt
+│   │   └── example.txt
+│   ├── day03/      # Input files for Day 3
 │   │   ├── input.txt
 │   │   └── example.txt
 │   └── ...         # Additional day inputs
@@ -69,6 +73,13 @@ Each solution script is designed to read input from standard input (stdin), allo
   - Allows one violation to be removed if it makes an unsafe report safe
   - Uses array manipulation to test each possible dampening position
   - Maintains original safety rules for distance and sequence patterns
+
+### Day 3: Multiplication Instructions
+- `multiplier.sh`: Process multiplication instructions from corrupted memory
+- `multiplier2.sh`: Enhanced version that handles do() and don't() instructions
+  - Tracks state of multiplication (enabled/disabled)
+  - Processes instructions line by line after splitting on parentheses
+  - Handles complex patterns with regex matching
 
 ## Input Files
 
